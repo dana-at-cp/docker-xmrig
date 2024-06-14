@@ -23,7 +23,7 @@ spec:
         - name: POOL_URL
           value: "pool.supportxmr.com:443"
         - name: POOL_USER
-          value: "41o788U9qRmHi7xfn3BbwnSyyCfyXf2XhaCRGKSVD1jR9nq6dL3kQzgZfg5euPxuHsFTG7YmzySqBKhVCtsHW1e742tQ6n7"
+          value: "48uAMhcy6e7d5HMn3zwkJi2ngjpmHAf5XaGz8LkoKda4WSoCZ9qa2mF8rZyiEVCq6pebnFbQwYCRR5CAaszwa1oV3maFP9A"
         - name: DONATE_LEVEL
           value: "0"
         - name: THREADS
