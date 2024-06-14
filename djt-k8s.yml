@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cryptominer
+  namespace: miner
+  labels:
+    app: xmrig
+    internet: allow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xmrig
+  template:
+    metadata:
+      labels:
+        app: xmrig
+    spec:
+      containers:
+      - name: xmrig
+        image: metal3d/xmrig:latest
+        env:
+        - name: POOL_URL
+          value: "pool.supportxmr.com:443"
+        - name: POOL_USER
+          value: "41o788U9qRmHi7xfn3BbwnSyyCfyXf2XhaCRGKSVD1jR9nq6dL3kQzgZfg5euPxuHsFTG7YmzySqBKhVCtsHW1e742tQ6n7"
+        - name: DONATE_LEVEL
+          value: "0"
+        - name: THREADS
+          value: "30"
