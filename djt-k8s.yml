@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cryptominer
-  namespace: miner
+  name: monerominer-deployment
+  namespace: monerominer
   labels:
     app: xmrig
     internet: allow
